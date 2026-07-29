@@ -6,7 +6,7 @@ import { join } from "path";
     imports: [
         ClientsModule.register([
             {
-                name: "ADMIN_USER_CITY_PACKAGE",
+                name: "ADMIN_USER_PACKAGE",
                 transport: Transport.GRPC,
                 options: {
                     package: "user",
@@ -22,4 +22,4 @@ import { join } from "path";
     ],
     exports: [ClientsModule],
 })
-export class AdminUserCityGrpcModule {}
+export class AdminUserGrpcModule {}
